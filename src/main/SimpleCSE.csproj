@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleRss.cs" />
+    <Compile Include="SimpleGoogleMapsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleGoogleMapsForm.Designer.cs">
+      <DependentUpon>SimpleGoogleMapsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleGoogleMaps\Location.cs" />
+    <Compile Include="SimpleGoogleMaps\Path.cs" />
+    <Compile Include="SimpleGoogleMaps\SimpleGoogleMaps.cs" />
+    <Compile Include="SimpleImage\SimpleImage.cs" />
+    <Compile Include="SimpleGoogleMaps\Marker.cs" />
+    <Compile Include="SimpleRss\SimpleRss.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SimpleGoogleMapsForm.resx">
+      <DependentUpon>SimpleGoogleMapsForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
