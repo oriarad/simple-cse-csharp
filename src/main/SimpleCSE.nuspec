@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SimpleCSE</id>
-    <version>0.0.2</version>
+    <version>0.0.2.1</version>
     <title>SimpleCSE</title>
     <authors>Ori Arad</authors>
     <owners>Ori Arad</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/oriarad/simple-cse-csharp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This is a C# version of SimpleCSE</description>
-    <releaseNotes>First version of SimpleCSE package</releaseNotes>
+    <releaseNotes>First version of SimpleRss was added</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Education SimpleCSE K12</tags>
   </metadata>
